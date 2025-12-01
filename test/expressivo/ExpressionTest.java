@@ -109,7 +109,7 @@ public class ExpressionTest {
 
 
     // ----------------------------------------------------------
-    // Mixed expression tests (structural equality)
+    // Mixed tests
     // ----------------------------------------------------------
 
     @Test
@@ -127,8 +127,6 @@ public class ExpressionTest {
         assertEquals(e1, e2);
         assertEquals(e1.hashCode(), e2.hashCode());
         assertEquals("(x + 1) * 3".replace("(", "").replace(")", ""), e1.toString());
-        // MIT doesn’t require parentheses in toString for AST
-        // so "x + 1 * 3" or "x + 1 * 3" is allowed depending on your version
     }
 
     @Test

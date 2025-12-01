@@ -20,7 +20,7 @@ public interface Expression {
     // Expression = Number(value: double)
     //      + Variable(name: String)
     //      + Sum(left: Expression, right: Expression)
-    //      + Product(left: Expression, right: Expression)
+    //      + Multiply(left: Expression, right: Expression)
 
     /**
      * Parse an expression.
